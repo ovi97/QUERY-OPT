@@ -4,11 +4,11 @@ This is a simple RDBMS optimiser. It accepts a accept a canonical query plan (a 
 
 SJDB supports a limited subset of the relational algebra, consisting of the following operators only:
 
-[^1]cartesian product
-[^2] select with a predicate of the form attr=val or attr=attr
-[^3] project
-[^4] equijoin with a predicate of the form attr=attr
-[^5]scan (an operator that reads a named relation as a source for a query plan)
+- cartesian product
+- select with a predicate of the form attr=val or attr=attr
+- project
+- equijoin with a predicate of the form attr=attr
+- scan (an operator that reads a named relation as a source for a query plan)
 
 ## Estimator.java
 Estimator implements the PlanVisitor interface and performs a depth-first traversal of the query plan
