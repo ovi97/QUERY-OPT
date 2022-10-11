@@ -1,0 +1,22 @@
+SELECT *    
+FROM Project, Department
+WHERE dept=deptid
+
+ // there is a problem with project push down with this example
+SELECT *   
+FROM Project, Department, Person
+WHERE dept=deptid
+
+// there is a problem with project push down with this example
+SELECT persid 
+FROM Project, Department, Person
+WHERE dept=deptid
+
+SELECT deptid 
+FROM Project, Department, Person
+WHERE dept=deptid
+
+
+SELECT dept
+FROM Project, Department
+WHERE dept=deptid

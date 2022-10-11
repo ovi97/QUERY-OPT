@@ -1,0 +1,15 @@
+SELECT projname, deptname
+FROM Person, Project, Department
+WHERE persid=manager, dept=deptid, persname="Smith", projid="123", deptid="234"
+
+SELECT *
+FROM Project, Department
+WHERE deptname="Research"
+
+SELECT *
+FROM Project, Department, Person
+WHERE deptname="Research"
+
+SELECT projname, deptname
+FROM Person, Project, Department
+WHERE persid=manager, dept=deptid, persname="Smith", projid="123"

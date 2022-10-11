@@ -1,0 +1,59 @@
+SELECT *
+FROM Person
+
+
+SELECT persname
+FROM Person
+WHERE age="35"
+
+SELECT *
+FROM Project, Department
+WHERE dept=deptid
+
+SELECT projid
+FROM  Project, Department
+WHERE dept=deptid, deptname="Research"
+
+SELECT *
+FROM Person, Project,Department
+WHERE persid="1",persname=manager,projname="2"
+
+SELECT persid
+FROM Person, Project,Department
+WHERE persid="1",manager="2",persname=manager
+
+SELECT projname, deptname
+FROM Person, Project, Department
+WHERE persid=manager, dept=deptid, persname="Smith"
+
+SELECT projname, deptname
+FROM Person, Project, Department
+WHERE persid=manager, dept="aa", persname="Smith",dept=deptid
+
+SELECT projname, deptname
+FROM Person, Project, Department
+WHERE persid=manager, dept="aa", persname="Smith",deptid="a"  
+
+SELECT projname, deptname
+FROM Project, Department, Person
+WHERE persid=manager, dept=deptid, persname="Smith"
+
+SELECT projname, deptname
+FROM Project, Department, Person
+WHERE persid=manager, dept=deptid
+
+SELECT *
+FROM Person, Project, Department
+WHERE persid=manager, dept=deptid, persname="Smith"
+
+SELECT *
+FROM Person, Project, Department
+WHERE persid=manager
+
+SELECT projid, deptid
+FROM Project, Department
+WHERE deptid="2222", projid="333"
+
+SELECT projname, deptname
+FROM Person, Project, Department
+WHERE persid=manager, dept=deptid, persname="Smith", projname="3"

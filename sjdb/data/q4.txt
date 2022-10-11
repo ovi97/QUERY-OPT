@@ -1,0 +1,7 @@
+SELECT projid
+FROM  Project, Department
+WHERE dept=deptid, deptname="Research"
+
+SELECT *
+FROM  Project, Department
+WHERE dept=deptid, deptname="Research"

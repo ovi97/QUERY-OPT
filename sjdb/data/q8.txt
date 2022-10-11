@@ -1,0 +1,4 @@
+SELECT projid, deptid
+FROM  Project, Department
+WHERE dept="1234", deptid="234"
+
